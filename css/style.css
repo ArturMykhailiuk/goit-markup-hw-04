@@ -1,72 +1,72 @@
 :root {
-    --primary-text-color: #2E2F42;
-    --primary-background-color: #FCFCFC;
-    --primary-accent-color: #4D5AE5; 
-  }
+  --primary-text-color: #2e2f42;
+  --primary-background-color: #fcfcfc;
+  --primary-accent-color: #4d5ae5;
+}
 
 body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--primary-text-color);
-    background-color: var(--primary-background-color);
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
 }
 
 .logo-link {
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 1.31;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.31;
 }
-.nav-link{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
+.nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
 }
 .address-link {
-    font-size: 16px;
-    color: #434455;
+  font-size: 16px;
+  color: #434455;
 }
 
 .button {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    background-color: #F4F4FD;
-    color:var(--primary-accent-color);
-    cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  background-color: #f4f4fd;
+  color: var(--primary-accent-color);
+  cursor: pointer;
 }
 
 .h2 {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 p {
-    font-size: 16px;
-    color: #434455;
+  font-size: 16px;
+  color: #434455;
 }
 
 .button:hover,
 .button:focus {
-    background-color: var(--primary-accent-color);
-    color: white;
+  background-color: var(--primary-accent-color);
+  color: white;
 }
 
 .button:active {
-    background-color: #404BBF;
-    color: white;
+  background-color: #404bbf;
+  color: white;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-    color: var(--primary-accent-color);
+  color: var(--primary-accent-color);
 }
 
 .address-link:hover,
 .address-link:focus {
-    color: var(--primary-accent-color);
+  color: var(--primary-accent-color);
 }
 
 .link:hover,
 .link:focus {
-    color: var(--primary-accent-color);
+  color: var(--primary-accent-color);
 }
