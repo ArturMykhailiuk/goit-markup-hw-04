@@ -11,8 +11,12 @@ body {
   background-color: var(--primary-background-color);
 }
 
-span {
-  color: var(--primary-iris-color);
+span{
+  color: var(--primary-navyblue-color);
+}
+
+span.footer-logo{
+  color: #f4f4fd;
 }
 
 .logo-link {
