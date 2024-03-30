@@ -1,13 +1,18 @@
 :root {
-  --primary-text-color: #2e2f42;
+  --primary-bluenavy-color: #2e2f42;
   --primary-background-color: #fcfcfc;
-  --primary-accent-color: #4d5ae5;
+  --primary-iris-color: #4d5ae5;
+  --primary-slate-color: #434455;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  color: var(--primary-text-color);
+  color: var(--primary-bluenavy-color);
   background-color: var(--primary-background-color);
+}
+
+span {
+  color: var(--primary-iris-color);
 }
 
 .logo-link {
@@ -22,7 +27,17 @@ body {
 }
 .address-link {
   font-size: 16px;
-  color: #434455;
+  color: var(--primary-slate-color);
+}
+
+.button-order-service {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  background-color: var(--primary-iris-color);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .button {
@@ -30,11 +45,31 @@ body {
   font-weight: 500;
   line-height: 1.5;
   background-color: #f4f4fd;
-  color: var(--primary-accent-color);
+  color: var(--primary-iris-color);
+  border-radius: 4px;
   cursor: pointer;
 }
 
-.h2 {
+h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  color: white;
+}
+
+h2.studio {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h3 {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -42,12 +77,15 @@ body {
 
 p {
   font-size: 16px;
-  color: #434455;
+  color: var(--primary-slate-color);
 }
 
+p.footer-text {
+  color: #f4f4fd;
+}
 .button:hover,
 .button:focus {
-  background-color: var(--primary-accent-color);
+  background-color: var(--primary-iris-color);
   color: white;
 }
 
@@ -58,15 +96,15 @@ p {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: var(--primary-accent-color);
+  color: var(--primary-iris-color);
 }
 
 .address-link:hover,
 .address-link:focus {
-  color: var(--primary-accent-color);
+  color: var(--primary-iris-color);
 }
 
 .link:hover,
 .link:focus {
-  color: var(--primary-accent-color);
+  color: var(--primary-iris-color);
 }
