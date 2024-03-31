@@ -11,8 +11,8 @@ body {
   background-color: var(--primary-background-color);
 }
 
-span{
-  color: var(--primary-navyblue-color);
+span.header-logo{
+  color: var(--primary-bluenavy-color);
 }
 
 span.footer-logo{
@@ -20,14 +20,17 @@ span.footer-logo{
 }
 
 .logo-link {
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.31;
+  color: var(--primary-iris-color)
 }
 .nav-link {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
+  color: var(--primary-bluenavy-color)
 }
 .address-link {
   font-size: 16px;
@@ -52,8 +55,20 @@ span.footer-logo{
   color: var(--primary-iris-color);
   border-radius: 4px;
   cursor: pointer;
+  font-family: inherit;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section.hero{
+  background-color: var(--primary-bluenavy-color);
+}
 h1 {
   font-size: 56px;
   font-weight: 700;
@@ -84,6 +99,10 @@ p {
   color: var(--primary-slate-color);
 }
 
+footer {
+  background-color: var(--primary-bluenavy-color);
+}
+
 p.footer-text {
   color: #f4f4fd;
 }
@@ -101,6 +120,10 @@ p.footer-text {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--primary-iris-color);
+}
+
+.address-link{
+  font-style: normal;
 }
 
 .address-link:hover,
