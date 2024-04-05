@@ -6,8 +6,6 @@
   --primary-slate-color: #434455;
 }
 
-
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -26,7 +24,7 @@ body {
   color: var(--primary-bluenavy-color);
   background-color: var(--primary-background-color);
 }
-.section{
+.section {
   padding: 120px 0px 120px 0px;
 }
 
@@ -47,7 +45,6 @@ h3 {
 ul {
   margin: 0;
   padding-left: 0;
-
 }
 
 li {
@@ -166,7 +163,6 @@ span.footer-logo {
 
 /*STUDIO*/
 
-
 section.hero {
   background-color: var(--primary-bluenavy-color);
   text-align: center;
@@ -196,15 +192,13 @@ h1.studio {
   border: none;
 }
 
-
 .features-flex {
   display: flex;
   gap: 24px;
 }
-.li-width{
-
+.li-width {
   width: calc((100% - 72px) / 4);
-};
+}
 h3 {
   font-size: 20px;
   font-weight: 500;
@@ -213,8 +207,7 @@ h3 {
   margin-bottom: 8px;
 }
 
-
-section.goals{
+section.goals {
   padding-bottom: 120px;
 }
 h2.studio {
@@ -230,7 +223,6 @@ h2.studio {
   justify-content: space-between;
   gap: 24px;
 }
-
 
 section.team {
   padding-top: 120px;
