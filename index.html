@@ -17,8 +17,25 @@
     />
     <link href="./css/style.css" rel="stylesheet" />
   </head>
-
   <body>
+    <div backdrop class="backdrop is-hidden">
+      <div data-modal class="modal is-hidden" >
+          <button class="btn" data-modal-close backdrop-close>
+            <svg width="24" height="24" fill="none">
+              <circle cx="12" cy="12" r="12" fill="#E7E9FC"/>
+              <circle cx="12" cy="12" r="11.5"/>
+              <g clip-path="url(#clip0_297024_954)">
+              <path d="M16 8.80571L15.1943 8L12 11.1943L8.80571 8L8 8.80571L11.1943 12L8 15.1943L8.80571 16L12 12.8057L15.1943 16L16 15.1943L12.8057 12L16 8.80571Z" fill="#2E2F42"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_297024_954">
+                  <rect width="8" height="8" fill="white" transform="translate(8 8)"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+      </div>
+    </div>
     <header>
       <div class="container top-line-flex">
         <nav class="logo-nav-flex">
@@ -26,7 +43,7 @@
             >WEB<span class="header-logo">STUDIO</span></a
           >
           <ul class="nav-menu-flex">
-            <li><a class="nav-link" href="./index.html">Studio</a></li>
+            <li><a class="nav-link current" href="./index.html">Studio</a></li>
             <li><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
             <li><a class="nav-link" href="./index.html">Contacts</a></li>
           </ul>
@@ -51,7 +68,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="studio">Effective Solution For Your Business</h1>
-          <button class="button-order-service" type="button">
+          <button data-modal-open backdrop-open class="button-order-service" type="button">
             Order Service
           </button>
         </div>
@@ -60,28 +77,40 @@
         <div class="container">
           <h2 class="visually-hidden">What are we doing</h2>
           <ul class="features-flex">
-            <li class="li-width">
+            <li class="feature-card">
+              <svg width="264" height="112">
+                <use href="./images/icons.svg#icon-Icon-1"></use>
+              </svg>
               <h3>Strategy</h3>
               <p>
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="li-width">
+            <li class="feature-card">
+              <svg width="264" height="112">
+                <use href="./images/icons.svg#icon-Icon-2"></use>
+              </svg>
               <h3>Punctuality</h3>
               <p>
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li class="li-width">
+            <li class="feature-card">
+              <svg width="264" height="112">
+                <use href="./images/icons.svg#icon-Icon-3"></use>
+              </svg>
               <h3>Diligence</h3>
               <p>
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="li-width">
+            <li class="feature-card">
+              <svg width="264" height="112">
+                <use href="./images/icons.svg#icon-Icon-4"></use>
+              </svg>
               <h3>Technologies</h3>
               <p>
                 Design practice focused on digital experiences. We bring forth a
@@ -140,6 +169,36 @@
               <div class="team-player-info">
                 <h3 class="studio">Mark Guerrero</h3>
                 <p>Product Designer</p>
+                <ul class="team-player-social-flex">
+                  <li>
+                    <a href="#">
+                    <svg width="40" height="40">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                    <svg  width="40" height="40">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                    <svg  width="40" height="40">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                    <svg  width="40" height="40">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="team-player-card">
@@ -153,6 +212,36 @@
               <div class="team-player-info">
                 <h3 class="studio">Tom Ford</h3>
                 <p>Frontend Developer</p>
+                <ul class="team-player-social-flex">
+                  <li>
+                    <a href="#">
+                    <svg width="40" height="40">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                    <svg  width="40" height="40">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                    <svg  width="40" height="40">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                    <svg  width="40" height="40">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="team-player-card">
@@ -166,6 +255,36 @@
               <div class="team-player-info">
                 <h3 class="studio">Camila Garcia</h3>
                 <p>Marketing</p>
+                <ul class="team-player-social-flex">
+                  <li>
+                    <a href="#">
+                    <svg width="40" height="40">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                    <svg  width="40" height="40">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                    <svg  width="40" height="40">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                    <svg  width="40" height="40">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="team-player-card">
@@ -179,22 +298,134 @@
               <div class="team-player-info">
                 <h3 class="studio">Daniel Wilson</h3>
                 <p>UI Designer</p>
+                <ul class="team-player-social-flex">
+                  <li>
+                    <a href="#">
+                    <svg width="40" height="40">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                    <svg  width="40" height="40">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                    <svg  width="40" height="40">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                    <svg  width="40" height="40">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
         </div>
       </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="studio">Customers</h2>
+          <ul class="customers-flex">
+            <li>
+                <svg  width="168" height="88">
+                  <rect width="168" height="88" stroke=#8E8F99 stroke-width="1" fill="transparent" rx="4" ry="4"/>                 
+                  <use href="./images/icons.svg#icon-Client-1"></use>
+                </svg>
+            </li>
+            <li>
+                <svg  width="168" height="88">
+                  <rect  width="168" height="88" stroke=#8E8F99 stroke-width="1" fill="transparent" rx="4" ry="4"/>
+                  <use href="./images/icons.svg#icon-Client-2"></use>
+                </svg>
+            </li>
+            <li>
+                <svg  width="168" height="88">
+                  <rect width="168" height="88" stroke=#8E8F99 stroke-width="1" fill="transparent" rx="4" ry="4"/>
+                  <use href="./images/icons.svg#icon-Client-3"></use>
+                </svg>
+            </li>
+            <li>
+                <svg  width="168" height="88">
+                  <rect width="168" height="88" stroke=#8E8F99 stroke-width="1" fill="transparent" rx="4" ry="4"/>
+                  <use href="./images/icons.svg#icon-Client-4"></use>
+                </svg>
+            </li>
+            <li>
+                <svg  width="168" height="88">
+                  <rect width="168" height="88" stroke=#8E8F99 stroke-width="1" fill="transparent" rx="4" ry="4"/>
+                  <use href="./images/icons.svg#icon-Client-5"></use>
+                </svg>
+            </li>
+            <li>
+                <svg  width="168" height="88">
+                  <rect width="168" height="88" stroke=#8E8F99 stroke-width="1" fill="transparent" rx="4" ry="4"/>
+                  <use href="./images/icons.svg#icon-Client-6"></use>
+                </svg>
+            </li>
+          </ul>
+        </div>
+      </section>           
     </main>
     <footer>
       <div class="container">
-        <a href="./index.html" class="logo-link"
-          ><span>WEB</span><span class="footer-logo">STUDIO</span>
-        </a>
-        <p class="footer-text">
-          Increase the flow of customers and sales for your business with
-          digital marketing & growth solutions.
-        </p>
+        <ul class="footer-flex">
+          <li>
+            <a href="./index.html" class="logo-link"
+              ><span>WEB</span><span class="footer-logo">STUDIO</span>
+            </a>
+
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </li>
+          <li>
+            <h3 class="footer-social-title">Social media</h3>
+            <ul class="footer-social-flex">
+              <li>
+                <a href="#">
+                  <svg  width="40" height="40">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg  width="40" height="40">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg  width="40" height="40">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg  width="40" height="40">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
