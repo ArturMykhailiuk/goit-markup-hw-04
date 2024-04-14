@@ -72,7 +72,6 @@ img.img-no-gap {
 /*HEADER*/
 header {
   border-bottom: 1px solid #e7e9fc;
-  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -223,7 +222,6 @@ h1.studio {
   cursor: pointer;
   background-color: #E7E9FC;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0;
   border-radius: 50%;
   width: 24px;
   height: 24px;
@@ -232,18 +230,16 @@ h1.studio {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn-svg:hover {  
-  fill: #E7E9FC;
+.p1{
+  width: 8px;
+  height: 8px;
+  fill: var(--primary-bluenavy-color)
 }
 
-.close-btn-svg {  
-  fill: var(--primary-bluenavy-color);
-}  
-
 .close-btn:hover,
-.close-btn:focus {  
+.close-btn:focus .p1 {
   background-color: #404BBF;
-
+  fill: white;
 }
 
 .backdrop {
@@ -297,7 +293,7 @@ section.team {
   padding-top: 120px;
   padding-bottom: 120px;
   background-color: #f4f4fd;
-  max-width: 1440px;
+
   margin: 0 auto;
 }
 .team-flex {
@@ -400,7 +396,7 @@ section.team {
   gap: 24px;
   flex-wrap: wrap;
   row-gap: 48px;
-  padding-top: 96px;
+  margin-top: 72px;
 }
 
 h2.portfolio {
@@ -475,7 +471,6 @@ footer {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: var(--primary-bluenavy-color);
-  max-width: 1440px;
   margin: 0 auto;
 }
 
